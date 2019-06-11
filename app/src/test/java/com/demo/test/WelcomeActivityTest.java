@@ -60,11 +60,11 @@ public class WelcomeActivityTest {
         assertThat(TextUtils.isDigitsOnly(valueY.getText()), equalTo(true));
     }
 
-    // test case kiểm tra kết quả là chính xác khi nhập (8 + -1  = 7)
-//    @Test public void testResult() throws Exception {
-//        valueX.setText("8");
-//        valueY.setText("-1");
-//        addButton.performClick();
-//        assertThat(result.getText().toString(), equalTo("7"));
-//    }
+     //test case kiểm tra kết quả là chính xác khi nhập (8 + -1  = 7)
+    @Test public void testResult() throws Exception {
+        valueX.setText("8");
+        valueY.setText("-1");
+        addButton.performClick();
+        assertThat(result.getText().toString(), equalTo("7"));
+    }
 }

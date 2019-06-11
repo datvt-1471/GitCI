@@ -23,7 +23,7 @@ public class RobolectricActivity extends AppCompatActivity {
             @Override public void onClick(View view) {
                 if (TextUtils.isDigitsOnly(valueX.getText()) && TextUtils.isDigitsOnly(valueY.getText()))
                 {
-                    Toast.makeText(RobolectricActivity.this, "Tinh TOng", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RobolectricActivity.this, "Tinh Tong", Toast.LENGTH_SHORT).show();
                     sum();
                 }
             }

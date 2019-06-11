@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RobolectricActivity extends AppCompatActivity {
 
@@ -22,6 +23,7 @@ public class RobolectricActivity extends AppCompatActivity {
             @Override public void onClick(View view) {
                 if (TextUtils.isDigitsOnly(valueX.getText()) && TextUtils.isDigitsOnly(valueY.getText()))
                 {
+                    Toast.makeText(RobolectricActivity.this, "Tinh TOng", Toast.LENGTH_SHORT).show();
                     sum();
                 }
             }

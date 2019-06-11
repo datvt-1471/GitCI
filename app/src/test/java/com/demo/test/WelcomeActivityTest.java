@@ -35,10 +35,10 @@ public class WelcomeActivityTest {
                 .resume()
                 .get();
         // khởi tạo các thành phần sử dụng trong activity
-        valueX = (EditText) activity.findViewById(R.id.edt_x);
-        valueY = (EditText) activity.findViewById(R.id.edt_y);
-        result = (TextView) activity.findViewById(R.id.tv_sum);
-        addButton = (Button) activity.findViewById(R.id.btn_ok);
+        valueX = activity.findViewById(R.id.edt_x);
+        valueY = activity.findViewById(R.id.edt_y);
+        result = activity.findViewById(R.id.tv_sum);
+        addButton = activity.findViewById(R.id.btn_ok);
     }
 
     /**
